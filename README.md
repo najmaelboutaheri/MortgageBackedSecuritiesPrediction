@@ -61,7 +61,7 @@ This section outlines the initial steps taken to set up and explore the dataset 
    - **Review Data Types**: Inspect the data types of each column to identify any type-related issues.
    - **Compute Summary Statistics**: Analyze summary statistics for numerical features to understand their distribution and identify potential anomalies or outliers.
 
-    '''
+    
 Summary statistics for numerical features:
          CreditScore  FirstPaymentDate   MaturityDate            MIP  
 count  291451.000000     291451.000000  291451.000000  291451.000000   
@@ -102,7 +102,7 @@ min            0.000000           1.000000
 50%            0.000000          48.000000  
 75%            0.000000          63.000000  
 max          180.000000         212.000000  
-'''
+
 
 These steps ensure that we have a good grasp of the dataset's structure and content, which is crucial for effective data preprocessing and analysis.
 
