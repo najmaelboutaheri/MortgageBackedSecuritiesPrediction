@@ -350,6 +350,7 @@ plt.figure(figsize=(10, 6))
 sns.barplot(x='Average_MI', y='Feature', data=mi_df_sorted)
 plt.title('Feature Importance Based on Average Mutual Information')
 plt.show()
+```
 
 
 ### Explanation:
