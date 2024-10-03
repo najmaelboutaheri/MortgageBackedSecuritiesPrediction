@@ -63,6 +63,7 @@ This section outlines the initial steps taken to set up and explore the dataset 
 
     
 Summary statistics for numerical features:
+
          CreditScore  FirstPaymentDate   MaturityDate            MIP  
 count  291451.000000     291451.000000  291451.000000  291451.000000   
 mean      708.936991     199904.760553  202902.367043       9.216685   
