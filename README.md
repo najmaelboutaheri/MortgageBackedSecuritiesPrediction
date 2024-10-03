@@ -61,9 +61,9 @@ This section outlines the initial steps taken to set up and explore the dataset 
    - **Review Data Types**: Inspect the data types of each column to identify any type-related issues.
    - **Compute Summary Statistics**: Analyze summary statistics for numerical features to understand their distribution and identify potential anomalies or outliers.
 
-    
+    '''
 Summary statistics for numerical features:
-         CreditScore  FirstPaymentDate   MaturityDate            MIP  \
+         CreditScore  FirstPaymentDate   MaturityDate            MIP  
 count  291451.000000     291451.000000  291451.000000  291451.000000   
 mean      708.936991     199904.760553  202902.367043       9.216685   
 std        68.408791         13.821228      16.090508      12.648273   
@@ -73,7 +73,7 @@ min         0.000000     199901.000000  202402.000000       0.000000
 75%       753.000000     199905.000000  202904.000000      25.000000   
 max       849.000000     201303.000000  204302.000000      55.000000   
 
-               Units          OCLTV            DTI        OrigUPB  \
+               Units          OCLTV            DTI        OrigUPB  
 count  291451.000000  291451.000000  291451.000000  291451.000000   
 mean        1.026022      76.960529      30.033453  124940.387921   
 std         0.202986      15.236154      13.203974   53657.440624   
@@ -83,7 +83,7 @@ min         0.000000       0.000000       0.000000    8000.000000
 75%         1.000000      90.000000      39.000000  160000.000000   
 max         4.000000     110.000000      65.000000  497000.000000   
 
-                 LTV  OrigInterestRate   OrigLoanTerm  EverDelinquent  \
+                 LTV  OrigInterestRate   OrigLoanTerm  EverDelinquent  
 count  291451.000000     291451.000000  291451.000000   291451.000000   
 mean       76.937986          6.926547     359.835375        0.197848   
 std        15.225298          0.343541       2.286939        0.398378   
@@ -102,6 +102,7 @@ min            0.000000           1.000000
 50%            0.000000          48.000000  
 75%            0.000000          63.000000  
 max          180.000000         212.000000  
+'''
 
 These steps ensure that we have a good grasp of the dataset's structure and content, which is crucial for effective data preprocessing and analysis.
 
