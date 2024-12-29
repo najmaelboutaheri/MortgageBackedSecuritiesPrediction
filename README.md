@@ -517,3 +517,20 @@ The Django application provides a web-based interface for users to interact with
 - **Performance**: Monitor the performance and responsiveness of both the Flask API and Django web interface.
 
 For detailed setup and configuration, refer to the official documentation for Flask and Django. Make sure to test the entire workflow to ensure smooth integration between the two applications.
+
+### Contributing
+If you'd like to contribute to this project:
+
+1. Fork the repository.
+2. Create a new feature branch (git checkout -b feature-branch).
+3. Commit your changes (git commit -m "Add feature").
+4. Push to the branch (git push origin feature-branch).
+5. Open a Pull Request.
+
+### License
+
+This project is licensed under the MIT License.
+
+### Contact:
+- **[Email](najma.elboutaheri@etu.uae.ac.ma)** 
+- **[Linkedin profile](https://www.linkedin.com/in/najma-el-boutaheri-8185a1267/)** 
