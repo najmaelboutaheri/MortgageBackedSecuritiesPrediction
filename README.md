@@ -55,19 +55,33 @@ This dataset contains various features related to mortgage loans, borrowers, and
 <img width="577" alt="image" src="https://github.com/user-attachments/assets/59ab55d2-ba57-4281-bf83-1af823126ac8" />
 
 1. **Data Cleaning**:
-   + Dropped irrelevant columns (`ProductType`, `LoanSeqNum`).
-   + Handled missing values and outliers.
-   + Removed duplicates and capped outliers.
+   **-->** Dropped irrelevant columns (`ProductType`, `LoanSeqNum`).
+   
+   **-->** Handled missing values and outliers.
+   
+   **-->** Removed duplicates and capped outliers.
      
 <img width="572" alt="image" src="https://github.com/user-attachments/assets/2a03bc53-522c-427c-a6c6-be9bebc565cc" />
+2. **Exploratory Data Analysis**:
 
-2. **Feature Engineering**:
-   + Created new features like `Credit_range`, `LTV_range`, `EMI`, and `Monthly_Income`.
+   **-->** Temporal data analysis:
+   
+![Capture d'écran 2024-12-13 123127](https://github.com/user-attachments/assets/319db685-e681-4d06-9685-5ea8fd7d90c6)
+   
+   **-->** Correlation heatmap:
+
+![Capture d'écran 2024-12-13 123318](https://github.com/user-attachments/assets/742d1a94-a71f-46bf-a301-22b9a82ad43b)
+
+
+3. **Feature Engineering**:
+   
+   **-->** Created new features like `Credit_range`, `LTV_range`, `EMI`, and `Monthly_Income`.
      
 <img width="579" alt="image" src="https://github.com/user-attachments/assets/ca329472-1dbf-48fe-b783-5ac89cbffa7d" />
 
-3. **Data Encoding**:
-   + Applied Label Encoding, One-Hot Encoding, Target Encoding, and Ordinal Encoding for categorical features.
+4. **Data Encoding**:
+   
+   **-->** Applied Label Encoding, One-Hot Encoding, Target Encoding, and Ordinal Encoding for categorical features.
 
 ## Feature Selection
 
@@ -81,14 +95,21 @@ This dataset contains various features related to mortgage loans, borrowers, and
 <img width="518" alt="image" src="https://github.com/user-attachments/assets/ea7c10cc-3381-4b44-a037-c8b55d395f0a" />
 
 1. **Classification**:
-   + **Random Forest** was used to predict `EverDelinquent`.
-   + Evaluated using accuracy, precision, recall, and F1-score.
+   
+   **-->** **Naive Bayes** was used to predict `EverDelinquent`.
+   
+   ![Capture d'écran 2024-12-13 121534](https://github.com/user-attachments/assets/d65df368-59bc-4948-ad0c-c12346019e8f)
 
-2. **Regression**:
-   + **Linear Regression** was used to predict `prepayment` for delinquent loans.
-   + Evaluated using MAE, MSE, and R2 score.
+   **-->** Evaluated using accuracy, precision, recall, and F1-score.
+
+3. **Regression**:
+   
+   **-->** **Linear Regression** was used to predict `prepayment` for delinquent loans.
+   
+   **-->** Evaluated using MAE, MSE, and R2 score.
      
-<img width="675" alt="image" src="https://github.com/user-attachments/assets/b7a6f909-a034-4ed2-b88d-da47a3e43ca1" />
+![Capture d'écran 2024-12-10 181131](https://github.com/user-attachments/assets/5b8d70be-b606-4416-8d2a-d1b6288122a9)
+
 
 ## Pipeline
 
