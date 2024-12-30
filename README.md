@@ -14,8 +14,6 @@ This dataset contains various features related to mortgage loans, borrowers, and
 
 ### Dataset Features:
 
-<img width="533" alt="image" src="https://github.com/user-attachments/assets/8c1b7039-cee7-4700-9c84-b3f6c8797471" />
-
 - **CreditScore (int64)**: The borrower’s credit score at loan origination.
 - **FirstPaymentDate (int64)**: The date of the first loan payment made by the borrower.
 - **FirstTimeHomebuyer (object)**: Indicates whether the borrower is a first-time homebuyer (Yes/No).
@@ -63,8 +61,6 @@ Data cleaning is an essential step in the data preprocessing pipeline. This step
    **-->** Handled missing values and outliers.
    
    **-->** Removed duplicates and capped outliers.
-     
-<img width="577" alt="image" src="https://github.com/user-attachments/assets/2a03bc53-522c-427c-a6c6-be9bebc565cc" />
 
 2. **Exploratory Data Analysis**:
 
@@ -81,8 +77,6 @@ Heatmap of correlations highlights strong positive correlations between LTV and 
 3. **Feature Engineering**:
    
    **-->** Created new features like `Credit_range`, `LTV_range`, `EMI`, and `Monthly_Income` To enhance the dataset and provide more informative inputs to machine learning models, several new features were created based on the existing data.
-     
-<img width="577" alt="image" src="https://github.com/user-attachments/assets/ca329472-1dbf-48fe-b783-5ac89cbffa7d" />
 
 4. **Data Encoding**:
    
@@ -102,8 +96,6 @@ Heatmap of correlations highlights strong positive correlations between LTV and 
 1. **Classification**:
    
    **-->** **Naive Bayes** was used to predict `EverDelinquent`.
-   
-   ![Capture d'écran 2024-12-13 121534](https://github.com/user-attachments/assets/d65df368-59bc-4948-ad0c-c12346019e8f)
 
    **-->** Evaluated using accuracy, precision, recall, and F1-score.
 
