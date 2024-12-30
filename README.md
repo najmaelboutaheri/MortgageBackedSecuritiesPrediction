@@ -61,7 +61,8 @@ This dataset contains various features related to mortgage loans, borrowers, and
    
    **-->** Removed duplicates and capped outliers.
      
-<img width="572" alt="image" src="https://github.com/user-attachments/assets/2a03bc53-522c-427c-a6c6-be9bebc565cc" />
+<img width="577" alt="image" src="https://github.com/user-attachments/assets/2a03bc53-522c-427c-a6c6-be9bebc565cc" />
+
 2. **Exploratory Data Analysis**:
 
    **-->** Temporal data analysis:
@@ -77,7 +78,7 @@ This dataset contains various features related to mortgage loans, borrowers, and
    
    **-->** Created new features like `Credit_range`, `LTV_range`, `EMI`, and `Monthly_Income`.
      
-<img width="579" alt="image" src="https://github.com/user-attachments/assets/ca329472-1dbf-48fe-b783-5ac89cbffa7d" />
+<img width="577" alt="image" src="https://github.com/user-attachments/assets/ca329472-1dbf-48fe-b783-5ac89cbffa7d" />
 
 4. **Data Encoding**:
    
@@ -85,14 +86,14 @@ This dataset contains various features related to mortgage loans, borrowers, and
 
 ## Feature Selection
 
-<img width="595" alt="image" src="https://github.com/user-attachments/assets/a500408f-c54c-4dc1-96bb-89012a2f276c" />
+<img width="577" alt="image" src="https://github.com/user-attachments/assets/a500408f-c54c-4dc1-96bb-89012a2f276c" />
 
 1. Used **Mutual Information (MI)** to rank features.
 2. Filtered features with MI scores below 0.02.
 
 ## Modeling
 
-<img width="518" alt="image" src="https://github.com/user-attachments/assets/ea7c10cc-3381-4b44-a037-c8b55d395f0a" />
+<img width="577" alt="image" src="https://github.com/user-attachments/assets/ea7c10cc-3381-4b44-a037-c8b55d395f0a" />
 
 1. **Classification**:
    
