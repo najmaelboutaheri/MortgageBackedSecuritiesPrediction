@@ -68,12 +68,12 @@ Data cleaning is an essential step in the data preprocessing pipeline. This step
 
 2. **Exploratory Data Analysis**:
 
-   **-->** Temporal data analysis: this figure shows the Average Original Interest Rate Over Time.
+**-->** Temporal data analysis: this figure shows the Average Original Interest Rate Over Time.
    
 ![Capture d'écran 2024-12-13 123127](https://github.com/user-attachments/assets/319db685-e681-4d06-9685-5ea8fd7d90c6)
    
-   **-->** Correlation heatmap:
-   Heatmap of correlations highlights strong positive correlations between LTV and OCLTV and strong negative correlations between OrigInterestRate and CreditScore.
+**-->** Correlation heatmap:
+Heatmap of correlations highlights strong positive correlations between LTV and OCLTV and strong negative correlations between OrigInterestRate and CreditScore.
 
 ![Capture d'écran 2024-12-13 123318](https://github.com/user-attachments/assets/742d1a94-a71f-46bf-a301-22b9a82ad43b)
 
