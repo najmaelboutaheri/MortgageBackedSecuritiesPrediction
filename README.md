@@ -10,9 +10,11 @@ The dataset includes features like `CreditScore`, `FirstPaymentDate`, `EverDelin
 
 ## Understanding the Dataset
 This dataset contains various features related to mortgage loans, borrowers, and properties. The goal of this project is to build a classification model to predict whether a borrower will become delinquent on their loan (using the `EverDelinquent` feature). If the classification result indicates a delinquency (`EverDelinquent = 1`), the next step is to assess prepayment behavior.
+
 <img width="566" alt="image" src="https://github.com/user-attachments/assets/62aad365-7d7a-4cd9-b11d-c81f216331f9" />
 
 ### Dataset Features:
+
 <img width="533" alt="image" src="https://github.com/user-attachments/assets/8c1b7039-cee7-4700-9c84-b3f6c8797471" />
 
 - **CreditScore (int64)**: The borrower’s credit score at loan origination.
@@ -50,16 +52,19 @@ This dataset contains various features related to mortgage loans, borrowers, and
 - **Prepayment**: Target variable for regression after delinquency.
 
 ## Data Preprocessing
+
 <img width="577" alt="image" src="https://github.com/user-attachments/assets/59ab55d2-ba57-4281-bf83-1af823126ac8" />
 
 1. **Data Cleaning**:
    - Dropped irrelevant columns (`ProductType`, `LoanSeqNum`).
    - Handled missing values and outliers.
    - Removed duplicates and capped outliers.
+     
 <img width="572" alt="image" src="https://github.com/user-attachments/assets/2a03bc53-522c-427c-a6c6-be9bebc565cc" />
 
 2. **Feature Engineering**:
    - Created new features like `Credit_range`, `LTV_range`, `EMI`, and `Monthly_Income`.
+     
 <img width="579" alt="image" src="https://github.com/user-attachments/assets/ca329472-1dbf-48fe-b783-5ac89cbffa7d" />
 
 
@@ -67,12 +72,14 @@ This dataset contains various features related to mortgage loans, borrowers, and
    - Applied Label Encoding, One-Hot Encoding, Target Encoding, and Ordinal Encoding for categorical features.
 
 ## Feature Selection
+
 <img width="595" alt="image" src="https://github.com/user-attachments/assets/a500408f-c54c-4dc1-96bb-89012a2f276c" />
 
 - Used **Mutual Information (MI)** to rank features.
 - Filtered features with MI scores below 0.02.
 
 ## Modeling
+
 <img width="518" alt="image" src="https://github.com/user-attachments/assets/ea7c10cc-3381-4b44-a037-c8b55d395f0a" />
 
 1. **Classification**:
@@ -82,9 +89,12 @@ This dataset contains various features related to mortgage loans, borrowers, and
 2. **Regression**:
    - **Linear Regression** was used to predict `prepayment` for delinquent loans.
    - Evaluated using MAE, MSE, and R2 score.
-<img width="323" alt="image" src="https://github.com/user-attachments/assets/55f1b20f-b5f5-4c4a-aa52-362447241bc5" />
+     
+<img width="675" alt="image" src="https://github.com/user-attachments/assets/b7a6f909-a034-4ed2-b88d-da47a3e43ca1" />
+
 
 ## Pipeline
+
 <img width="630" alt="image" src="https://github.com/user-attachments/assets/8fbb2d2b-aa94-47e1-8293-6a832dc2d1cd" />
 
 - A custom pipeline integrates classification and regression tasks:
