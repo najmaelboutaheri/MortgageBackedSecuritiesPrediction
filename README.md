@@ -7,7 +7,6 @@ This repository contains a case study on mortgage trading, focusing on predictin
 ## Dataset Overview
 The dataset includes features like `CreditScore`, `FirstPaymentDate`, `EverDelinquent`, and more. The goal is to predict delinquency (`EverDelinquent`) and, if delinquent, assess prepayment behavior.
 
-
 ## Understanding the Dataset
 This dataset contains various features related to mortgage loans, borrowers, and properties. The goal of this project is to build a classification model to predict whether a borrower will become delinquent on their loan (using the `EverDelinquent` feature). If the classification result indicates a delinquency (`EverDelinquent = 1`), the next step is to assess prepayment behavior.
 
@@ -45,7 +44,7 @@ This dataset contains various features related to mortgage loans, borrowers, and
 - **EverDelinquent (int64)**: The target variable for the classification task, indicating if the borrower was ever delinquent (1 for yes, 0 for no).
 - **MonthsDelinquent (int64)**: The number of months the borrower was delinquent.
 - **MonthsInRepayment (int64)**: The total number of months the borrower has been repaying the loan.
-  
+
 ### Key Features:
 - **CreditScore**: Borrower’s credit score.
 - **EverDelinquent**: Target variable for delinquency prediction.
@@ -56,20 +55,19 @@ This dataset contains various features related to mortgage loans, borrowers, and
 <img width="577" alt="image" src="https://github.com/user-attachments/assets/59ab55d2-ba57-4281-bf83-1af823126ac8" />
 
 1. **Data Cleaning**:
-   i. Dropped irrelevant columns (`ProductType`, `LoanSeqNum`).
-   ii. Handled missing values and outliers.
-   iii. Removed duplicates and capped outliers.
+   + Dropped irrelevant columns (`ProductType`, `LoanSeqNum`).
+   + Handled missing values and outliers.
+   + Removed duplicates and capped outliers.
      
 <img width="572" alt="image" src="https://github.com/user-attachments/assets/2a03bc53-522c-427c-a6c6-be9bebc565cc" />
 
 2. **Feature Engineering**:
-   i. Created new features like `Credit_range`, `LTV_range`, `EMI`, and `Monthly_Income`.
+   + Created new features like `Credit_range`, `LTV_range`, `EMI`, and `Monthly_Income`.
      
 <img width="579" alt="image" src="https://github.com/user-attachments/assets/ca329472-1dbf-48fe-b783-5ac89cbffa7d" />
 
-
 3. **Data Encoding**:
-   i. Applied Label Encoding, One-Hot Encoding, Target Encoding, and Ordinal Encoding for categorical features.
+   + Applied Label Encoding, One-Hot Encoding, Target Encoding, and Ordinal Encoding for categorical features.
 
 ## Feature Selection
 
@@ -83,38 +81,38 @@ This dataset contains various features related to mortgage loans, borrowers, and
 <img width="518" alt="image" src="https://github.com/user-attachments/assets/ea7c10cc-3381-4b44-a037-c8b55d395f0a" />
 
 1. **Classification**:
-   i. **Random Forest** was used to predict `EverDelinquent`.
-   ii. Evaluated using accuracy, precision, recall, and F1-score.
+   + **Random Forest** was used to predict `EverDelinquent`.
+   + Evaluated using accuracy, precision, recall, and F1-score.
 
 2. **Regression**:
-   i. **Linear Regression** was used to predict `prepayment` for delinquent loans.
-   ii. Evaluated using MAE, MSE, and R2 score.
+   + **Linear Regression** was used to predict `prepayment` for delinquent loans.
+   + Evaluated using MAE, MSE, and R2 score.
      
 <img width="675" alt="image" src="https://github.com/user-attachments/assets/b7a6f909-a034-4ed2-b88d-da47a3e43ca1" />
-
 
 ## Pipeline
 
 <img width="630" alt="image" src="https://github.com/user-attachments/assets/8fbb2d2b-aa94-47e1-8293-6a832dc2d1cd" />
 
 - A custom pipeline integrates classification and regression tasks:
-  1. Predict delinquency using Naive Bayes.
-  2. Predict prepayment for delinquent loans using Linear Regression.
+  + Predict delinquency using Naive Bayes.
+  + Predict prepayment for delinquent loans using Linear Regression.
 
 ## Deployment
 1. **Flask**:
-   i. RESTful API for predictions.
-   ii. Check this repository : [link](https://github.com/najmaelboutaheri/MortgagePredictorApp)
+   + RESTful API for predictions.
+   + Check this repository: [link](https://github.com/najmaelboutaheri/MortgagePredictorApp)
 
 ## Contributing
-Fork the repository.
-1. Create a new feature branch.
-2. Commit your changes.
-3. Push to the branch.
-4. Open a Pull Request.
++ Fork the repository.
++ Create a new feature branch.
++ Commit your changes.
++ Push to the branch.
++ Open a Pull Request.
 
 ## License
 This project is licensed under the MIT License.
+
 ### Contact:
 - **[Email](najma.elboutaheri@etu.uae.ac.ma)** 
-- **[Linkedin profile](https://www.linkedin.com/in/najma-el-boutaheri-8185a1267/)** 
+- **[LinkedIn profile](https://www.linkedin.com/in/najma-el-boutaheri-8185a1267/)**
