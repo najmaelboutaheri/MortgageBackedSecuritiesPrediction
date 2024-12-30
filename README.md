@@ -55,6 +55,7 @@ This dataset contains various features related to mortgage loans, borrowers, and
 <img width="577" alt="image" src="https://github.com/user-attachments/assets/59ab55d2-ba57-4281-bf83-1af823126ac8" />
 
 1. **Data Cleaning**:
+   
    **-->** Dropped irrelevant columns (`ProductType`, `LoanSeqNum`).
    
    **-->** Handled missing values and outliers.
@@ -65,7 +66,7 @@ This dataset contains various features related to mortgage loans, borrowers, and
 
 2. **Exploratory Data Analysis**:
 
-   **-->** Temporal data analysis:
+   **-->** Temporal data analysis: 
    
 ![Capture d'écran 2024-12-13 123127](https://github.com/user-attachments/assets/319db685-e681-4d06-9685-5ea8fd7d90c6)
    
@@ -124,6 +125,16 @@ This dataset contains various features related to mortgage loans, borrowers, and
 1. **Flask**:
    + RESTful API for predictions.
    + Check this repository: [link](https://github.com/najmaelboutaheri/MortgagePredictorApp)
+     
+## Conclusion
+
+This project demonstrates a systematic approach to predicting loan delinquency and prepayment behavior using a combination of data preprocessing, feature engineering, and machine learning techniques. By leveraging Mutual Information for feature selection and integrating both classification and regression tasks, we achieved insightful results that can be applied in real-world mortgage trading scenarios. 
+
+## Future work could include:
+
++ Enhancing the pipeline with more advanced models or ensemble methods.
++ Incorporating real-time data to improve prediction accuracy.
++ Expanding deployment options for broader accessibility and scalability.
 
 ## Contributing
 + Fork the repository.
@@ -138,3 +149,5 @@ This project is licensed under the MIT License.
 ### Contact:
 - **[Email](najma.elboutaheri@etu.uae.ac.ma)** 
 - **[LinkedIn profile](https://www.linkedin.com/in/najma-el-boutaheri-8185a1267/)**
+
+Thank you for exploring this case study. Feedback and contributions are always welcome!
