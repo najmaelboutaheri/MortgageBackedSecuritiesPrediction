@@ -52,6 +52,8 @@ This dataset contains various features related to mortgage loans, borrowers, and
 
 ## Data Preprocessing
 
+Data cleaning is an essential step in the data preprocessing pipeline. This step ensures that the dataset is free from inconsistencies, missing values, and outliers that could negatively impact model performance.
+
 <img width="577" alt="image" src="https://github.com/user-attachments/assets/59ab55d2-ba57-4281-bf83-1af823126ac8" />
 
 1. **Data Cleaning**:
@@ -66,18 +68,19 @@ This dataset contains various features related to mortgage loans, borrowers, and
 
 2. **Exploratory Data Analysis**:
 
-   **-->** Temporal data analysis: 
+   **-->** Temporal data analysis: this figure shows the Average Original Interest Rate Over Time.
    
 ![Capture d'écran 2024-12-13 123127](https://github.com/user-attachments/assets/319db685-e681-4d06-9685-5ea8fd7d90c6)
    
    **-->** Correlation heatmap:
+   Heatmap of correlations highlights strong positive correlations between LTV and OCLTV and strong negative correlations between OrigInterestRate and CreditScore.
 
 ![Capture d'écran 2024-12-13 123318](https://github.com/user-attachments/assets/742d1a94-a71f-46bf-a301-22b9a82ad43b)
 
 
 3. **Feature Engineering**:
    
-   **-->** Created new features like `Credit_range`, `LTV_range`, `EMI`, and `Monthly_Income`.
+   **-->** Created new features like `Credit_range`, `LTV_range`, `EMI`, and `Monthly_Income` To enhance the dataset and provide more informative inputs to machine learning models, several new features were created based on the existing data.
      
 <img width="577" alt="image" src="https://github.com/user-attachments/assets/ca329472-1dbf-48fe-b783-5ac89cbffa7d" />
 
@@ -112,6 +115,7 @@ This dataset contains various features related to mortgage loans, borrowers, and
      
 ![Capture d'écran 2024-12-10 181131](https://github.com/user-attachments/assets/5b8d70be-b606-4416-8d2a-d1b6288122a9)
 
+After evaluating the models on accuracy and F1-score, we found that **Naive bayes** outperformed the other models due to its ability to handle imbalanced datasets and its robustness to overfitting. Therefore, Naive bayes was selected as the final model for classification and we selected Linear Regression for prediction task as the final model due to its simplicity and slightly better predictive power on our dataset.
 
 ## Pipeline
 
