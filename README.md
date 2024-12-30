@@ -56,39 +56,39 @@ This dataset contains various features related to mortgage loans, borrowers, and
 <img width="577" alt="image" src="https://github.com/user-attachments/assets/59ab55d2-ba57-4281-bf83-1af823126ac8" />
 
 1. **Data Cleaning**:
-   - Dropped irrelevant columns (`ProductType`, `LoanSeqNum`).
-   - Handled missing values and outliers.
-   - Removed duplicates and capped outliers.
+   i. Dropped irrelevant columns (`ProductType`, `LoanSeqNum`).
+   ii. Handled missing values and outliers.
+   iii. Removed duplicates and capped outliers.
      
 <img width="572" alt="image" src="https://github.com/user-attachments/assets/2a03bc53-522c-427c-a6c6-be9bebc565cc" />
 
 2. **Feature Engineering**:
-   - Created new features like `Credit_range`, `LTV_range`, `EMI`, and `Monthly_Income`.
+   i. Created new features like `Credit_range`, `LTV_range`, `EMI`, and `Monthly_Income`.
      
 <img width="579" alt="image" src="https://github.com/user-attachments/assets/ca329472-1dbf-48fe-b783-5ac89cbffa7d" />
 
 
 3. **Data Encoding**:
-   - Applied Label Encoding, One-Hot Encoding, Target Encoding, and Ordinal Encoding for categorical features.
+   i. Applied Label Encoding, One-Hot Encoding, Target Encoding, and Ordinal Encoding for categorical features.
 
 ## Feature Selection
 
 <img width="595" alt="image" src="https://github.com/user-attachments/assets/a500408f-c54c-4dc1-96bb-89012a2f276c" />
 
-- Used **Mutual Information (MI)** to rank features.
-- Filtered features with MI scores below 0.02.
+1. Used **Mutual Information (MI)** to rank features.
+2. Filtered features with MI scores below 0.02.
 
 ## Modeling
 
 <img width="518" alt="image" src="https://github.com/user-attachments/assets/ea7c10cc-3381-4b44-a037-c8b55d395f0a" />
 
 1. **Classification**:
-   - **Random Forest** was used to predict `EverDelinquent`.
-   - Evaluated using accuracy, precision, recall, and F1-score.
+   i. **Random Forest** was used to predict `EverDelinquent`.
+   ii. Evaluated using accuracy, precision, recall, and F1-score.
 
 2. **Regression**:
-   - **Linear Regression** was used to predict `prepayment` for delinquent loans.
-   - Evaluated using MAE, MSE, and R2 score.
+   i. **Linear Regression** was used to predict `prepayment` for delinquent loans.
+   ii. Evaluated using MAE, MSE, and R2 score.
      
 <img width="675" alt="image" src="https://github.com/user-attachments/assets/b7a6f909-a034-4ed2-b88d-da47a3e43ca1" />
 
@@ -103,8 +103,8 @@ This dataset contains various features related to mortgage loans, borrowers, and
 
 ## Deployment
 1. **Flask**:
-   - RESTful API for predictions.
-   - Check this repository : [link](https://github.com/najmaelboutaheri/MortgagePredictorApp)
+   i. RESTful API for predictions.
+   ii. Check this repository : [link](https://github.com/najmaelboutaheri/MortgagePredictorApp)
 
 ## Contributing
 Fork the repository.
